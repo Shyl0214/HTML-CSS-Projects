@@ -22,10 +22,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 370px;
+  max-width: 350px;
   border-radius: 24px;
   padding: 20px;
-  background-color: pink;
+  border: 1px solid black;
 }
 
 .img-container {
@@ -64,7 +64,53 @@ body {
 
 .profile-card .link {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+}
+
+.link .icons {
+  display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffff;
+  text-decoration: none;
+  margin: 0 10px;
+  background-color: blue;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin-top: 1.5vh;
+}
+
+.profile-card .buttons {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.buttons .button {
+  padding: 5px 25px;
+  border-radius: 24px;
+  border: none;
+  color: #fff;
+  background-color: #3e70f1;
+  margin: 5px;
+  border-color: 1px solid;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.profile-card .social-media {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.social-media .like-share-comment {
+  padding: 0 20px;
+  margin: 3px;
+  border-right: 1px solid #c1c1c2;
+  /* background-color: black; */
+  /* color: white; */
 }
