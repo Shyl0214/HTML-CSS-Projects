@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 370px;
+  border-radius: 24px;
+  padding: 20px;
+  background-color: pink;
+}
+
+.img-container {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #3e70f1;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.img-container #img-id {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.profile-card .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.txt .job {
+  font-size: 20px;
+  font-weight: 600;
+}
+.txt .name {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile-card .link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
