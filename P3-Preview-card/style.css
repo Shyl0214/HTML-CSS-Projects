@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0d1a2d;
+  font-family: "Outfit", serif;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 326px;
+  min-height: 556px;
+  background-color: #15273f;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.3rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h2 {
+  color: white;
+  font-size: 20px;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.card p {
+  color: #8399b9;
+  font-size: 18px;
+  margin-top: 0.8rem;
+  font-weight: 400;
+}
+
+.h3-div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h3-div h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.h3-div #first-h3 {
+  color: #39f7f7;
+}
+
+.h3-div #second-h3 {
+  color: #8399b9;
+}
+
+hr {
+  border-color: #8399b9;;
+  margin-top: 1.5rem;
+  height: 0.5;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* justify-content: space-between; */
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1rem;
+  /* background-color: aqua; */
+}
+
+.img-container {
+  max-width: 40px;
+  /* background-color: red; */
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.img-container img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer span{
+    color: white;
+}
