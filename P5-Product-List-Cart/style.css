@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fcf8f5;
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+  column-gap: 2rem;
+  width: 100%;
+  max-width: 90%;
+  min-height: 100vh;
+  /* background-color: aqua; */
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #da5b5b; */
+  width: 80%;
+  max-width: 80%;
+}
+
+.row-img {
+  max-width: 250px;
+  min-height: 250px;
+  border-radius: 0.5em;
+}
+
+.cart-img {
+  width: 20px;
+  height: 20px;
+}
+
+.products-container h1 {
+  font-size: 2rem;
+  font-family: "Lexend Deca", serif;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.products {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 700px;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  border: 1px solid rgb(238, 209, 209);
+  padding: 0.5em 1.2em;
+  border-radius: 1.2em;
+  width: fit-content;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.cart-button:hover {
+  cursor: pointer;
+}
+
+.cart-button h2 {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #180b0b;
+  font-family: "Red Hat Text", serif;
+}
+
+h3 {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  font-family: "Red Hat Text", serif;
+  font-weight: 400;
+  color: #180b0b;
+}
+
+p {
+  margin-top: 2px;
+  font-size: 1rem;
+  font-family: "Red Hat Text", serif;
+  font-weight: 600;
+  color: #180b0b;
+}
+
+.cost {
+  color: #b86f5f;
+  font-size: 1 rem;
+  margin-bottom: 1em;
+}
+
+.cart {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lexend Deca", serif;
+  height: fit-content;
+  margin-top: 1.5rem;
+}
+
+.cart h2 {
+  font-weight: 500;
+}
+
+.cart p {
+  font-weight: 400;
+}
+.cart img {
+  width: 150px;
+  height: 150px;
+}
