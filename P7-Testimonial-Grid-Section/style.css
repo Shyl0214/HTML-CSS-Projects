@@ -22,6 +22,9 @@ body {
 main {
   display: grid;
   gap: 1em;
+  margin: 16px;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .box {
@@ -104,4 +107,39 @@ main {
   background-color: #0a64bd;
 }
 
+@media (min-width: 746px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .box-1 {
+    grid-column-start: span 2;
+  }
+
+  .box-5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .box-4 {
+    grid-column-start: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .box-1 {
+    grid-column-start: span 2;
+  }
+
+  .box-5 {
+    grid-column-start: 4 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* min-height: fit-content; */
+  }
+}
