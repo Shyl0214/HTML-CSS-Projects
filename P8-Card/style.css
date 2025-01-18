@@ -18,6 +18,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background: rgba(0, 20, 34, 1);
+  font-family: "Montserrat", serif;
 }
 
 .card-container {
@@ -35,7 +36,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .circle {
@@ -65,10 +65,105 @@ body {
 
 .card {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   max-width: 400px;
-  min-height: 500px;
+  /* min-height: 500px; */
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
+  padding: 1rem;
+  border-radius: 5px;
+  /* background-color: hotpink; */
+  /* border: 1px solid blue; */
+}
+
+.card-contents {
+  border-radius: 12px;
+  border: 1px solid rgba(216, 189, 189, 0.541);
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.tag-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  /* background-color: aqua; */
+}
+
+.tag-icon-container span {
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 209, 71, 1);
+  border-radius: 5px;
+  background-color: rgba(241, 198, 68, 0.24);
+}
+
+.card-title {
+  padding: 0px 16px;
+  /* background-color: hotpink; */
+}
+
+.card-title p {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  /* margin-bottom: 12px; */
+}
+
+.card-title span {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 1em;
+  /* margin-top: 2px; */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 10px 16px;
+  color: ;
+  /* background-color: hotpink; */
+  /* margin-top: 12px; */
+}
+
+.rating span {
+  color: rgba(241, 198, 68, 1);
+}
+
+.rating .rating-count {
+  color: rgba(219, 219, 219, 1);
+  font-size: 13px;
+  font-size: 400;
+}
+
+.rating img {
+  width: 120px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-top: 1px solid rgba(216, 189, 189, 0.541);
+  margin-top: 12px;
+  /* background-color: hotpink; */
+}
+
+.footer span {
+  text-transform: capitalize;
+  color: rgba(219, 219, 219, 1);
+  font-size: 16px;
+  font-weight: 400;
 }
