@@ -1,0 +1,54 @@
+:root {
+  --body-bg-color: #fefdf9;
+  --links-color: #9d9ca3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Inter", serif;
+  background: var(--body-bg-color);
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 4em;
+}
+
+.nav-links ul {
+  /* background-color: hotpink; */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--links-color);
+  font-weight: 400;
+  font-size: 16px;
+}
