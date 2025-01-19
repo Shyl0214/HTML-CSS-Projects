@@ -41,7 +41,6 @@ nav {
 }
 
 .nav-links ul {
-  /* background-color: hotpink; */
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -51,4 +50,149 @@ nav {
   color: var(--links-color);
   font-weight: 400;
   font-size: 16px;
+}
+
+.hero-section {
+  /* min-height: 70vh; */
+  padding: 2em 4em;
+  display: grid;
+  grid-template-areas:
+    "one one two"
+    "one one two"
+    "three four two";
+}
+
+.hero-section .box-1 {
+  grid-area: one;
+  background-color: hotpink;
+  overflow: hidden;
+}
+
+.hero-section .box-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-section .box-2 {
+  grid-area: two;
+  background-color: #00001a;
+  padding: 6em 1.5em;
+  color: #f3f4f6;
+}
+
+.hero-section .box-2-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+.hero-section .box-2-content h2 {
+  color: #efa855;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.hero-section .box-2-content .P1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.hero-section .box-2-content .P2 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2em;
+  opacity: 0.8;
+}
+
+.hero-section .box-3 {
+  grid-area: three;
+  background-color: #fefdf9;
+  color: #00001a;
+  padding: 2em 1em;
+}
+
+.hero-section .box-3 p {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero-section .box-4 {
+  grid-area: four;
+  background-color: #fefdf9;
+  color: #00001a;
+  padding: 3em 1em;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.hero-section .box-4 p {
+  opacity: 0.8;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hero-section .box-4 .button {
+  padding: 1em 2em;
+  margin-top: 2rem;
+  font-size: 1em;
+  font-weight: 600;
+  color: #00001a;
+  background-color: #f15d51;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sub-hero-section {
+  padding: 2em 4em;
+  /* min-height: 10vh; */
+  /* background-color: #9d9ca3; */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.sub-hero-section .box {
+  /* background-color: hotpink; */
+  /* border: 1px solid black; */
+  padding: 2em 0.5em;
+}
+
+.sub-hero-section .box img {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-hero-section .box h3 {
+  color: #e95e5e;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.sub-hero-section .box .P1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5em;
+  color: #00001a; 
+}
+
+.sub-hero-section .box .P2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5em;
+  opacity: 0.8;
+}
+
+.sub-hero-section .box-2 {
+  grid-column: span 2;
+}
+
+.sub-hero-section .box-4 {
+  grid-column: span 2;
+}
+
+.sub-hero-section .box-6 {
+  grid-column: span 2;
 }
